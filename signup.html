@@ -1,0 +1,77 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="description" content="Signup form for your website">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <div class="box">  
+    <h1>Signup</h1>
+    <form>
+      <div class="form-group">
+        <input type="text" 
+               class="form-control in" 
+               required 
+               placeholder="Full Name"
+               onfocus="this.placeholder = ''"
+               onblur="this.placeholder = 'Name'">
+      </div>
+      <div class="form-group">
+        <input type="email"
+               class="form-control in"
+               required 
+               placeholder="Email"
+               >
+      </div>
+      <div class="form-group">
+          <input type="password" 
+                 class="form-control in" 
+                 required
+                 placeholder="Password"
+                 onfocus="this.placeholder = ''"
+                 onblur="this.placeholder = 'Password'"
+                 >
+      </div>
+      
+      <div class="form-group">
+          <input type="password" 
+                 class="form-control in" 
+                 required
+                 placeholder="Confirm Password"
+                 text="hello"
+                 >
+      </div>
+      
+      <div class="form-group">
+          <input type="date" 
+                 class="form-control in" 
+                 required
+                 placeholder="MM/DD/YY"
+                 >
+      </div>
+      
+      <div class="form-group" style"display:flex;">
+      <input type="radio" name="option" value="student">
+  <label for="student">Student</label>
+  <input type="radio" name="option" value="employee">
+  <label for="employee">Employee</label>
+      </div>
+ <div class="form-group">
+          <input type="checkbox" 
+                 class="form-control" 
+                 required
+                 >I agree to all Terms and conditions
+      </div>
+      <br>
+      <button type="submit" class="btn btn-primary">
+        <span class="glyphicon glyphicon-ok" aria-hidden="true">
+        </span>
+          Signup
+      </button>
+    </form>
+  </div>
+</body>
+</html>
